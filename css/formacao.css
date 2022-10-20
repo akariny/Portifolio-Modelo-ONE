@@ -1,0 +1,65 @@
+.formacao {
+    background: #b5cff3;
+    background-image: url("../img/bg-onda1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 82px;
+    gap: 32px;
+}
+
+.formacao__titulo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.formacao__academica {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.formacao__academica-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.formacao__academica-cards-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    width: 200px;
+    height: 200px;
+
+    background: #FFFFFF;
+}
+
+.formacao__academica-cards-img img {
+    width: inherit;
+    height: inherit;
+}
+
+.formacao__academica-cards-figTitulo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.formacao__academica-cards-figSubTitulo {
+    font-weight: 500;
+    line-height: 19px;
+    color: #464646;
+}

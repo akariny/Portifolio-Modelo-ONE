@@ -1,0 +1,40 @@
+.sobre {
+    background: #b5cff3;
+    background-image: url("../img/bg-onda1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+    gap: 10px;
+}
+
+.sobre__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 80%;
+    height: 255px;
+}
+
+.sobre__titulo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.sobre__descricao {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    width: 70%;
+}
+
