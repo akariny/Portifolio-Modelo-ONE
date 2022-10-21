@@ -1,16 +1,16 @@
 .cabecalho {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 20px;
     justify-content: space-between;
-    width: 80%;
     margin: 0 auto;
-    margin-bottom: 20px;
     padding: 20px 0;
+    width: 80%;
 }
 
 .cabecalho__logo {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .cabecalho__logo-icone {
@@ -18,22 +18,22 @@
 }
 
 .cabecalho__logo-nome {
+    color: #464646;
     font-weight: 700;
     line-height: 19px;
-    color: #464646;
 }
 
 .cabecalho__link-lista {
     display: flex;
-    justify-content: center;
     gap: 32px;
+    justify-content: center;
 }
 
 .cabecalho__link-item a {
-    text-decoration: none;
+    color: #464646;
     font-weight: 500;
     line-height: 19px;
-    color: #464646;
+    text-decoration: none;
 }
 
 .cabecalho__link-item a:hover {
