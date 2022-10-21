@@ -1,0 +1,96 @@
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    background-image: url("../img/bg-onda2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.projetos__titulo {
+    padding-top: 60px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+}
+
+.projetos__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projetos__card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.projetos__card-img {
+    padding: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-img {
+    height: 406px;
+}
+
+.projetos__card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card-titulo {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646
+}
+
+.card-descricao {
+    font-weight: 500;
+    line-height: 19px;
+    color: #464646;
+}
+
+.card-botoes {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.card-botao1 {
+    text-align: center;
+    padding: 10px 16px;
+    border: 1px solid #2A7AE4;
+
+    font-weight: 400;
+    line-height: 19px;
+    color: #2A7AE4;
+}
+
+.card-botao2 {
+    text-align: center;
+    padding: 10px 19px;
+    border: none;
+    background: #2A7AE4;
+
+    font-weight: 400;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.card-botao1:hover , .card-botao2:hover {
+    cursor: pointer;
+}
