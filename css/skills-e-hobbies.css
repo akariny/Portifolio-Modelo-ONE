@@ -7,13 +7,12 @@
 }
 
 .skills, .hobbies {
-    width: 80%;
-    margin: 0 auto;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    margin: 0 auto;
     margin-bottom: 88px;
+    width: 80%;
 }
 
 .skills__titulo {
@@ -21,12 +20,12 @@
 }
 
 .skills__titulo , .hobbies__titulo {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
     color: #464646;
-
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
     margin-bottom: 32px;
+
 }
 
 .skills__caixa, .hobbies__caixa {
@@ -35,20 +34,19 @@
 }
 
 .skills__caixa-item, .hobbies__caixa-item {
+    align-items: flex-start;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 16px;
     gap: 8px;
-
-    width: 100px;
     height: 100px;
+    justify-content: flex-end;
+    padding: 16px;
+    width: 100px;
 }
 
 .skills__caixa-item-nome, .hobbies__caixa-item-nome {
-    font-weight: 700;
-    line-height: 19px;
     color: #464646;
+    line-height: 19px;
+    font-weight: 700;
 }
