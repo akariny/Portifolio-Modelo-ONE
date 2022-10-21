@@ -1,65 +1,76 @@
 .formacao {
+    align-items: center;
     background: #b5cff3;
     background-image: url("../img/bg-onda1.png");
     background-repeat: no-repeat;
     background-size: 100%;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 82px;
     gap: 32px;
+    padding: 82px;
+
 }
 
 .formacao__titulo {
-    font-weight: 700;
+    color: #464646;
     font-size: 32px;
     line-height: 38px;
-    color: #464646;
+    font-weight: 700;
 }
 
 .formacao__academica {
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     gap: 16px;
 }
 
 .formacao__academica-cards {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
 }
 
 .formacao__academica-cards-img {
+    align-items: center;
+    background: #FFFFFF;
+    background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
     gap: 10px;
-
-    width: 200px;
     height: 200px;
+    justify-content: center;
+    padding: 16px;
+    width: 200px;
+}
 
-    background: #FFFFFF;
+.ensino-medio {
+    background-image: url("../img/chapeu-formatura.png");
+}
+
+.faetec {
+    background-image: url("../img/faetec.png");
+}
+
+.oracle-one {
+    background-image: url("../img/one-logo.png");
 }
 
 .formacao__academica-cards-img img {
-    width: inherit;
     height: inherit;
+    width: inherit;
 }
 
 .formacao__academica-cards-figTitulo {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
     color: #464646;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .formacao__academica-cards-figSubTitulo {
+    color: #464646;
     font-weight: 500;
     line-height: 19px;
-    color: #464646;
 }
