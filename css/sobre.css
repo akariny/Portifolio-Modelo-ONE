@@ -6,8 +6,7 @@
     background-size: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 64px 0;
+    padding: 18px;
 }
 
 .sobre__div {
@@ -15,23 +14,47 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    height: 255px;
     justify-content: flex-start;
-    padding: 0px;
-    width: 80%;
+    margin: 30px 0;
 }
 
 .sobre__titulo {
     color: #464646;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: 700;
 }
 
 .sobre__descricao {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 19px;
-    width: 70%;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 30px 0;
+    }
+    .sobre__div {
+        margin: 30px 0 auto;
+        width: 80%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .sobre {
+        padding: 64px 0;
+    }
+
+    .sobre__titulo {
+        font-size: 32px;
+    }
+
+    .sobre__descricao {
+        font-size: 16px;
+        line-height: 19px;
+        width: 70%;
+    }
 }
 

@@ -5,8 +5,9 @@
     background-size: 100%;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 15px;
     padding: 0px;
+    margin-bottom: 20px;
 }
 
 .projetos__titulo {
@@ -21,15 +22,19 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 30px;
     margin: 0 auto;
-    width: 80%;
 }
 
 .projetos__card {
     align-items: center;
     display: flex;
+    flex-direction: column;
     gap: 16px;
+}
+
+.div-forca {
+    flex-direction: column-reverse;
 }
 
 .projetos__card-img {
@@ -37,9 +42,8 @@
     background-repeat: no-repeat;
     background-position: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    height: 416px;
-    padding: 10px;
-    width: 70%;
+    height: 150px;
+    width: 100%;
 }
 
 .decodificador {
@@ -59,26 +63,29 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 30%;
+    padding: 0 15px;
+    max-width: 300px;
+    align-items: center;
 }
 
 .card-titulo {
     color: #464646;
-    font-size: 22px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 19px;
 }
 
 .card-descricao {
     color: #464646;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 16px;
 }
 
 .card-botoes {
-    align-items: flex-start;
     display: flex;
+    font-size: 14px;
     gap: 16px;
+    justify-content: center;
 }
 
 .card-botao1 {
@@ -88,6 +95,7 @@
     line-height: 19px;
     padding: 10px 16px;
     text-align: center;
+    text-decoration: none;
 }
 
 .card-botao2 {
@@ -98,8 +106,60 @@
     line-height: 19px;
     padding: 10px 19px;
     text-align: center;
+    text-decoration: none;
 }
 
-.card-botao1:hover , .card-botao2:hover {
-    cursor: pointer;
+
+@media screen and (min-width: 768px) {
+    .projetos__card-img {
+        height: 416px;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .projetos {
+        gap: 32px;
+    }
+    .projetos__titulo {
+        font-size: 32px;
+    }
+
+    .projetos__cards {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .projetos__card {
+        flex-direction: row;
+    }
+
+    .projetos__card-img {
+        height: 416px;
+        width: 70%;
+    }
+
+    .projetos__card-info {
+        align-items: flex-start;
+        max-width: none;
+        width: 30%;
+    }
+
+    .card-titulo {
+        font-size: 22px;
+    }
+
+    .card-descricao {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .card-botoes {
+        font-size: 16px;
+    }
+
+    .card-botao1:hover , .card-botao2:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }

@@ -1,5 +1,5 @@
 .skills-e-hobbies {
-    background-image: url(../img/bg-onda2.png);
+    background-image: url("../img/bg-onda2.png");
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -10,9 +10,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     margin-bottom: 88px;
-    width: 80%;
 }
 
 .skills__titulo {
@@ -30,6 +28,7 @@
 
 .skills__caixa, .hobbies__caixa {
     display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -49,4 +48,21 @@
     color: #464646;
     line-height: 19px;
     font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .skills__caixa, .hobbies__caixa {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .skills, .hobbies {
+        margin: 0 auto 88px;
+        width: 80%;
+    }
+
+    .skills__titulo {
+        margin-top: 70px;
+    }
 }

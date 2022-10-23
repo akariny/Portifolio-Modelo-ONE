@@ -1,57 +1,118 @@
 .apresentacao {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
-    height: calc(100vh - 20px);
-    margin: 0 auto;
-    width: 80%;
+    flex-direction: column-reverse;
+    padding: 0 5px;
 }
 
 .apresentacao__texto {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    height: 246px;
+    gap: 16px;
     justify-content: center;
-    margin: auto 0;
-    width: 751px;
+    width: 100%;
+    
 }
 
 .apresentacao__texto-titulo {
     color: #464646;
-    font-size: 45px;
     font-weight: 700;
-    line-height: 60px;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .apresentacao__texto-subtitulo {
     color: #464646;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 16px;
 }
 
 .apresentacao__imagem {
-    height: 368px;
+    height: 150px;
 }
 
 .apresentacao__texto-link {
     height: 24px;
-    width: 467px;
+    
 }
 
 .apresentacao__texto-lista {
     display: flex;
-    gap: 32px;
+    gap: 16px;
 } 
 
 .apresentacao__texto-item a {
     color: #464646;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 19px;
     text-decoration: none;
 }
 
+.apresentacao__texto-item img {
+    height: 10px;
+}
+
+/*COLOCAR NO RESPONSIVO*/
 .apresentacao__texto-item a:hover {
     border-bottom: 1px solid #464646;
+}
+
+
+@media screen and (min-width: 768px) {
+    .apresentacao {
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .apresentacao__texto {
+        width: 751px;
+    }
+
+    .apresentacao__imagem {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .apresentacao {
+        height: calc(100vh - 20px);
+        padding: 0;
+    }
+
+    .apresentacao__texto {
+        gap: 24px;
+
+        height: 246px;
+        width: 751px;
+    }
+
+    .apresentacao__texto-titulo  {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .apresentacao__texto-subtitulo {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .apresentacao__texto-lista {
+        gap: 32px
+    }
+
+    .apresentacao__texto-item a {
+        font-size: 16px;
+    }
+
+    .apresentacao__texto-item img {
+        height: auto;
+    }
+
+    .apresentacao__imagem {
+        height: 368px;
+    }
 }

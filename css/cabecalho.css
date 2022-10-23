@@ -1,11 +1,11 @@
 .cabecalho {
     align-items: center;
     display: flex;
-    height: 20px;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px 0;
-    width: 80%;
+    flex-direction: column;
+    gap: 15px;
+    height: 175px;
+    justify-content: center;
+    padding: 16px;
 }
 
 .cabecalho__logo {
@@ -19,14 +19,17 @@
 
 .cabecalho__logo-nome {
     color: #464646;
+    font-size: 16px;
     font-weight: 700;
     line-height: 19px;
 }
 
 .cabecalho__link-lista {
     display: flex;
-    gap: 32px;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
+    padding: 10px;
 }
 
 .cabecalho__link-item a {
@@ -36,10 +39,28 @@
     text-decoration: none;
 }
 
-.cabecalho__link-item a:hover {
-    border-bottom: 1px solid #464646;
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        gap: 10px;
+        height: 100px;
+    }
 }
 
-.cabecalho__link-item:last-child a {
-    font-weight: 700;
+@media screen and (min-width: 992px) {
+    .cabecalho {
+        flex-direction: row;
+        height: 20px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 80%;
+    }
+
+    .cabecalho__link-item a:hover {
+        border-bottom: 1px solid #464646;
+    }
+    
+    .cabecalho__link-item:last-child a {
+        font-weight: 700;
+    }
 }

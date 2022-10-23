@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/skills-e-hobbies.css">
     <link rel="stylesheet" href="css/formacao.css">
     <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/rodape.css">
 </head>
 
 <body>
@@ -150,7 +152,7 @@
 
         <div class="projetos__cards">
 
-            <div class="projetos__card">
+            <div class="projetos__card div-decodificador">
                 <div class="projetos__card-img decodificador"></div>
 
                 <div class="projetos__card-info">
@@ -163,13 +165,13 @@
                         um(a) amigo(a) não é?!
                     </p>
                     <div class="card-botoes">
-                        <button class="card-botao1">Repositório</button>
-                        <button class="card-botao2">Ver demo</button>
+                        <a href="https://github.com/akariny/decodificador_de_texto" target="_blank" class="card-botao1">Repositório</a>
+                        <a href="https://akariny.github.io/decodificador_de_texto/" target="_blank" class="card-botao2">Ver demo</a>
                     </div>
                 </div>
             </div>
 
-            <div class="projetos__card">
+            <div class="projetos__card div-forca">
                 <div class="projetos__card-info">
                     <h3 class="card-titulo">Jogo da forca</h3>
                     <p class="card-descricao">
@@ -179,8 +181,8 @@
                         Possível escolher uma palavra para jogar com um amigo.
                     </p>
                     <div class="card-botoes">
-                        <button class="card-botao1">Repositório</button>
-                        <button class="card-botao2">Ver demo</button>
+                        <a href="https://github.com/akariny/Jogo-da-Forca" target="_blank" class="card-botao1">Repositório</a>
+                        <a href="https://akariny.github.io/Jogo-da-Forca/" target="_blank" class="card-botao2">Ver demo</a>
                     </div>
                 </div>
 
@@ -189,9 +191,46 @@
         </div>
     </section>
 
-    <section class="contato">
+    <footer class="contato-rodape">
+        <section class="contato">
+            <div class="contato__div">
+                <div class="contato__imagem"></div>
+                <div class="contato__formulario">
+                    <div class="formulario__texto">
+                        <p class="formulario__texto-titulo">Contato</p>
+                        <p class="formulario__texto-descricao">
+                            Quer entrar em contato comigo? <br>
+                            Preencha o formulário e entrarei em contato o mais 
+                            rápido possível.
+                        </p>
+                    </div>
+                    <form action="" class="formulario__campos">
+                        <div class="formulario__campos-itens">
+                            <label for="nome" class="formulario__campos-label">Nome</label>
+                            <input type="text" id="nome" class="formulario__campos-input">
+                        </div>
+
+                        <div class="formulario__campos-itens">
+                            <label for="email" class="formulario__campos-label">Email</label>
+                            <input type="text" id="email" class="formulario__campos-input">
+                        </div>
+
+                        <div class="formulario__campos-itens">
+                            <label for="mensagem" class="formulario__campos-label">Mensagem</label>
+                            <textarea id="mensagem" class="formulario__campos-textarea"></textarea>
+                        </div>
+                        
+                        <button class="formulario__botao">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
         
-    </section>
+        <section class="rodape">
+            <p>Desenvolvido por Ana Kariny &copy; 2022</p>
+            <p>Oracle Next Education | Alura</p>
+        </section>
+    </footer>
     
 </body>
 </html>

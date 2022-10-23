@@ -1,0 +1,132 @@
+.contato {
+    background: #b5cff3;
+    background-image: url("../img/bg-onda1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    padding: 90px 0 64 0;
+}
+
+.contato__div {
+    display: flex;
+}
+
+.contato__imagem {
+    background-image: url("../img/contato.png");
+    background-position: center;
+    background-size: cover;
+    display: none;
+    width: 50%;
+    height: 493px;
+}
+
+.contato__formulario {
+    padding: 0 20px;
+}
+
+.formulario__texto-titulo {
+    color: #464646;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.formulario__texto-descricao {
+    color: #464646;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.formulario__campos {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formulario__campos-itens {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding: 3px;
+    gap: 8px;
+}
+
+.formulario__campos-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A2A2A2;
+}
+
+.formulario__campos-input {
+    width: 100%;
+    height: 20px;
+    border: none;
+}
+
+.formulario__campos-textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: none;
+}
+
+.formulario__campos-input:focus , .formulario__campos-textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #2A7AE4;;
+}
+
+.formulario__botao {
+    background: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 12px;
+    width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .contato__div {
+        justify-content: center;
+    }
+
+    .contato__formulario {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contato__div {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .contato__imagem {
+        display: block;
+    }
+
+    .formulario__texto-titulo {
+        font-size: 32px;
+    }
+
+    .formulario__texto-descricao {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .formulario__campos-input {
+        height: 25px;
+    }
+
+    .formulario__campos-textarea {
+        height: 127px;
+    }
+
+    .formulario__botao {
+        width: 30%;
+    }
+
+}

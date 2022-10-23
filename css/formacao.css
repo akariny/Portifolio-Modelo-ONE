@@ -13,15 +13,16 @@
 
 .formacao__titulo {
     color: #464646;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: 700;
+    text-align: center;
 }
 
 .formacao__academica {
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -39,10 +40,10 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    height: 200px;
+    height: 150px;
     justify-content: center;
     padding: 16px;
-    width: 200px;
+    width: 150px;
 }
 
 .ensino-medio {
@@ -64,13 +65,37 @@
 
 .formacao__academica-cards-figTitulo {
     color: #464646;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 19px;
 }
 
 .formacao__academica-cards-figSubTitulo {
     color: #464646;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .formacao__academica {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .formacao__titulo {
+        font-size: 32px;
+        line-height: 38px;
+        margin-top: 50px;
+    }
+
+    .formacao__academica-cards-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .formacao__academica-cards-figTitulo {
+        font-size: 20px;
+    }
 }
