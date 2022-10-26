@@ -3,12 +3,12 @@
     background-image: url("../img/bg-onda1.png");
     background-size: 100%;
     background-repeat: no-repeat;
-
     padding: 90px 0 64 0;
 }
 
 .contato__div {
     display: flex;
+    justify-content: center;
 }
 
 .contato__imagem {
@@ -90,10 +90,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .contato__div {
-        justify-content: center;
-    }
-
     .contato__formulario {
         width: 80%;
     }
@@ -128,5 +124,4 @@
     .formulario__botao {
         width: 30%;
     }
-
 }
