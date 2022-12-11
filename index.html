@@ -23,11 +23,11 @@
         </div>
         <div class="cabecalho__link">
             <ul class="cabecalho__link-lista">
-                <li class="cabecalho__link-item"><a href="">Sobre Mim</a></li>
-                <li class="cabecalho__link-item"><a href="">Skills</a></li>
-                <li class="cabecalho__link-item"><a href="">Hobbies</a></li>
-                <li class="cabecalho__link-item"><a href="">Formação</a></li>
-                <li class="cabecalho__link-item"><a href="">Projetos</a></li>
+                <li class="cabecalho__link-item"><a href="#sobreMim">Sobre Mim</a></li>
+                <li class="cabecalho__link-item"><a href="#skills">Skills</a></li>
+                <li class="cabecalho__link-item"><a href="#hobbies">Hobbies</a></li>
+                <li class="cabecalho__link-item"><a href="#formacao">Formação</a></li>
+                <li class="cabecalho__link-item"><a href="#projetos">Projetos</a></li>
                 <li class="cabecalho__link-item"><a href="">anakariny10@gmail.com</a></li>
             </ul>
         </div>  
@@ -66,9 +66,9 @@
         <img src="img/perfil.png" alt="Foto Ana Kariny" class="apresentacao__imagem">
     </section>
 
-    <section class="sobre">
-        <div class="sobre__div">
-            <h3 class="sobre__titulo">Sobre mim</h3>
+    <section id="sobreMim" class="sobre">
+        <div  class="sobre__div">
+            <h3  class="sobre__titulo">Sobre mim</h3>
             <p class="sobre__descricao">
                 Tenho 22 anos, Maranhense e do signo de aquario. 
                 Concluí um curso de Técnico em Informática pela FAETEC onde tive 
@@ -85,7 +85,7 @@
         </div>  
     </section>
 
-    <section class="skills-e-hobbies">
+    <section id="skills" class="skills-e-hobbies">
         <div class="skills">
             <h3 class="skills__titulo">Skills</h3>
             <div class="skills__caixa">
@@ -104,7 +104,7 @@
             </div>
         </div>
 
-        <div class="hobbies">
+        <div id="hobbies" class="hobbies">
             <h3 class="hobbies__titulo">Hobbies</h3>
             <div class="hobbies__caixa">
                 <div class="hobbies__caixa-item">
@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <section class="formacao">
+    <section id="formacao" class="formacao">
         <h2 class="formacao__titulo">Formação Acadêmica</h2>
 
         <div class="formacao__academica">
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="projetos">
+    <section id="projetos" class="projetos">
         <h3 class="projetos__titulo">Projetos</h3>
 
         <div class="projetos__cards">
@@ -188,6 +188,24 @@
 
                 <div class="projetos__card-img forca"></div>
             </div>
+
+            <div class="projetos__card div-tarefas">
+                <div class="projetos__card-img tarefas"></div>
+
+                <div class="projetos__card-info">
+                    <h3 class="card-titulo">Lista de Tarefas</h3>
+                    <p class="card-descricao">
+                        Feito com HTML, CSS e Javascript.
+                        Aplicação para anotações de tarefas simples.
+                        Ainda em desenvolvimento uma atualização onde 
+                        as tarefas serão salvas no localstorage do navegador.
+                    </p>
+                    <div class="card-botoes">
+                        <a href="https://github.com/akariny/Projeto-To-do-list" target="_blank" class="card-botao1">Repositório</a>
+                        <a href="https://akariny.github.io/Projeto-To-do-list/" target="_blank" class="card-botao2">Ver demo</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -207,20 +225,23 @@
                     <form action="" class="formulario__campos">
                         <div class="formulario__campos-itens">
                             <label for="nome" class="formulario__campos-label">Nome</label>
-                            <input type="text" id="nome" class="formulario__campos-input">
+                            <input type="text" id="nome" class="formulario__campos-input" data-nome required>
+                            <span class="mensagemErro"  data-erro-nome></span>
                         </div>
 
                         <div class="formulario__campos-itens">
                             <label for="email" class="formulario__campos-label">Email</label>
-                            <input type="text" id="email" class="formulario__campos-input">
+                            <input type="email" id="email" class="formulario__campos-input" data-email required>
+                            <span class="mensagemErro"  data-erro-email></span>
                         </div>
 
                         <div class="formulario__campos-itens">
                             <label for="mensagem" class="formulario__campos-label">Mensagem</label>
-                            <textarea id="mensagem" class="formulario__campos-textarea"></textarea>
+                            <textarea id="mensagem" class="formulario__campos-textarea" data-mensagem required></textarea>
+                            <span class="mensagemErro"  data-erro-mensagem></span>
                         </div>
                         
-                        <button class="formulario__botao">Enviar mensagem</button>
+                        <button class="formulario__botao" onclick="validaFormulario()">Enviar mensagem</button>
                     </form>
                 </div>
             </div>
@@ -233,4 +254,6 @@
     </footer>
     
 </body>
+
+<script src="./js/formulario.js"></script>
 </html>

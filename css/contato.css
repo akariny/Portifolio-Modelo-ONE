@@ -80,6 +80,11 @@
     border-bottom: 2px solid #2A7AE4;;
 }
 
+.mensagemErro {
+    color: #ff0000;
+    font-size: .8rem;
+}
+
 .formulario__botao {
     background: #2A7AE4;
     border: none;

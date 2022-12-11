@@ -54,6 +54,10 @@
     background-image: url("../img/jogoDaForca.png");
 }
 
+.tarefas {
+    background-image: url("../img/ToDoList.png");
+}
+
 .card-img {
     height: 406px;
 }
